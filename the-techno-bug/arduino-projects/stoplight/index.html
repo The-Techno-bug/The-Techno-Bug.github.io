@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>The Techno Bug</title>
+      <link rel="stylesheet" href="../../CSS/style.css" type="text/css">
+      <link rel="icon" type="image/ico" href="../../images/common/favicon.ico">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">      
+   </head>
+   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function openhome(){
+              window.location.replace("../../../the-techno-bug");
+          }
+          $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+          $(window).on('load', function(){
+              setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+              });
+              function removeLoader(){
+                  $( "#loadingDiv" ).fadeOut(500, function() {
+                      // fadeOut complete. Remove the loading div
+                      $( "#loadingDiv" ).remove(); //makes page more lightweight 
+                      });  
+                }
+        </script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+          jQuery(document).ready(function() {
+              jQuery("#nav").load("../../navigation/nav.html"); 
+          });
+    </script>
+      <div id="wrapper" class="main">
+          <header style="text-align: center;">
+            <img src="logo.png" alt="" class="left" height="226px" width="226px" style="margin: 0 auto; padding: 10px;">
+            <br>
+            <span id="title">
+                The <br> Techno <br> Bug
+            </span>
+         </header>
+         <div id="main">
+            <iframe src="../../navigation/nav.html" frameborder="0" width="100%" height = "300px" style="border-radius: 0cm;"></iframe>
+             <h1 style="padding-bottom: 10px;">Arduino project 2</h1>
+             <h2 style="padding-bottom: 30px;">Stoplight</h2>
+             <div id="video">
+                 <iframe width="100%" height="696" 
+                 src="https://www.youtube.com/embed/hJqDt7UaZpw"
+                 frameborder="0" allow="accelerometer; autoplay; 
+                 encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen></iframe>
+                </div>
+                <div id="table">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <div id="code">
+                                    <h1>Code</h1>
+                                    <br>
+                                    <p>
+                                        <span class="teal">
+                                            int
+                                        </span>
+                                        red = 9;
+                                        <br>
+                                        <span class="teal">
+                                          int 
+                                        </span>
+                                        ylw = 10;
+                                        <br>
+                                        <span class="teal">
+                                            int
+                                        </span>
+                                        grn = 11;
+                                        <br><br>
+                                        <span class="teal">
+                                            void
+                                        </span>
+                                        <span class="grn">
+                                            setup
+                                        </span>
+                                        () {
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="cmt">
+                                                // put your setup code here, to run once:
+                                            </span>
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              red
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              ylw
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              grn
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );
+                                            <br>
+                                        }
+                                    
+                                        <br>
+                                        <br>
+                                        <span class="teal">
+                                            void
+                                        </span>
+                                        <span class="grn">
+                                            loop
+                                        </span>
+                                        () {
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="cmt">
+                                            // put your main code here, to run repeatedly:
+                                            </span>
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                digitalWrite
+                                            </span>
+                                            (red
+                                            </span>
+                                            , &nbsp;
+                                            <span class="teal">
+                                             HIGH
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                digitalWrite
+                                            </span>
+                                            (ylw
+                                            </span>
+                                            , &nbsp;
+                                            <span class="teal">
+                                             LOW
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                digitalWrite
+                                            </span>
+                                            (grn
+                                            </span>
+                                            , &nbsp;
+                                            <span class="teal">
+                                             LOW
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                delay
+                                            </span>
+                                            (20000);
+                                            &nbsp;
+                                            <span class="cmt">
+                                                //ms
+                                            </span>
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                digitalWrite
+                                            </span>
+                                            (red
+                                            </span>
+                                            , &nbsp;
+                                            <span class="teal">
+                                             LOW
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                digitalWrite
+                                            </span>
+                                            (ylw
+                                            </span>
+                                            , &nbsp;
+                                            <span class="teal">
+                                             LOW
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                digitalWrite
+                                            </span>
+                                            (grn
+                                            </span>
+                                            , &nbsp;
+                                            <span class="teal">
+                                             HIGH
+                                            </span>
+                                            );
+                                            <br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                                delay
+                                            </span>
+                                            (20000);
+                                            &nbsp;
+                                            <span class="cmt">
+                                                //ms
+                                            </span>
+                                            <br>
+                                        }
+                                    </p>
+                                </div> 
+                            </td>
+                            <td>
+                                <img src="../../images/arduino/stoplightsketch.png" alt="" class="left">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../../images/arduino/connections2.jpg" alt="" class="left" height="206" width="480">
+                            </td>
+                            <td>
+                                <div id="Connections">
+                                    <h1>Connections</h1>
+                                    <p>
+                                        <ol>
+                                            <li>Connect LED with resistor to Arduino Pin 13 and Connect Short leg to Negative Rail</li>
+                                            <li>Connect Tact Switch with one pin to Negative Rail and other pin to Arduino Pin 10 </li>
+                                            <li>Connect Negative Rail to GND on the Arduino</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 600px;" colspan="2">
+                                <div id="Funcdef">
+                                    <h1>Function definitions</h1>
+                                    <p style="text-align: justify; padding-right: 20px;">
+                                        <span class="cmt">
+                                            //Blink Sketch - Blink Arduino's onboard LED
+                                        </span>
+                                        : The // indicates that the line is a comment, something for the programmer to read instead 
+                                        of the computer.<br><br>
+                                        <span class="teal">
+                                            void
+                                        </span>
+                                        <span class="grn">
+                                            setup
+                                        </span>
+                                        () {}: void setup() is a way of telling the arduino that this is what I want you  to run once 
+                                        ( Kind of like setting up your computer - you only have to do it once! ) The curly brackets 
+                                        indicate what is inside void setup() and what is not.<br><br>
+
+                                        <span class="org">pinMode</span>
+                                        (<i>pin, mode</i>) : The pinMode function tells the arduino to set up the pin to mode.<br><br>
+
+                                        <span class="teal">
+                                            LED_BUILTIN
+                                        </span>
+                                        : This is the pin that represents the onboard LED.<br><br>
+
+                                        <span class="teal">
+                                            OUTPUT
+                                        </span>
+                                        : One of the modes from pinMode.<br><br>
+                                        
+                                        <span class="teal">
+                                            void
+                                        </span>
+                                        <span class="grn">
+                                            loop
+                                        </span>
+                                        () {}: void loop() is a way of telling the arduino that this is what I want you to run until 
+                                        someone resets or turns off the arduino ( like booting your computer: It keeps running until 
+                                        you shut it down! ) The curly brackets indicate what is inside void setup() and what is not. <br><br>
+
+                                        <span class="org">
+                                            digitalWrite
+                                        </span>
+                                        (<i>pin, status</i>): The digitalWrite function turns the pin to positive or negative, depending 
+                                        on the status. <br><br>
+
+                                        <span class="teal">
+                                            HIGH
+                                        </span>
+                                        : This represents positive energy in the digitalWrite function. <br><br>
+
+                                        <span class="teal">
+                                            LOW
+                                        </span>
+                                        : This represents negative energy in the digitalWrite function. <br><br>
+
+                                        <span class="org">
+                                            delay
+                                        </span>
+                                        (<i>milliseconds</i>): The delay function pauses the arduino for the number of milliseconds.<br><br>
+
+                                        Last but not least, don't forget the semicolon (";") at the end of each line! The 
+                                        semicolon tells the arduino that one instruction is over.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../../images/arduino/materials2.gif" alt="" class="left" width="550px">
+                            </td>
+                            <td>
+                                <h1>Materials Needed</h1>
+                                <ul>
+                                    <li>Arduino Uno R3</li>
+                                    <li>USB 2.0 to type A cable</li>
+                                    <li>Red, Yellow and Green LED</li>
+                                    <li>Small or Large Breadboard</li>
+                                    <li>7 Male to Male Wires</li>
+                                    <li>3 - 220&ohm; resistors</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1>Output</h1>
+                            </td>
+                            <td>
+                                <img src="../../images/arduino/output2.gif" alt="" class="left OSimg">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            </div>
+       </div>
+   </body>
+</html>

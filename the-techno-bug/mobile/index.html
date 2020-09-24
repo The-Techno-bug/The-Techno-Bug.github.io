@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <title>The Techno Bug</title>
+      <link rel="stylesheet" href="CSS/style.css" type="text/css">
+      <link rel="icon" type="image/ico" href="images/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    </head>
+    <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+            $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+            $(window).on('load', function(){
+                setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+                });
+                function removeLoader(){
+                    $( "#loadingDiv" ).fadeOut(500, function() {
+                        // fadeOut complete. Remove the loading div
+                        $( "#loadingDiv" ).remove(); //makes page more lightweight 
+                        });  
+                  }
+          </script>
+          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+            jQuery(document).ready(function() {
+                jQuery("#nav").load("nav.html"); 
+            });
+      </script>
+        <div id="wrapper" class="main">
+          <header style="text-align: center;">
+            <img src="logo.png" alt="" class="left" height="226px" width="226px" style="margin: 5px; padding: 10px;">
+            <br>
+            <span id="title">
+                The<br>Techno<br>Bug
+            </span>
+         </header>
+         <div id="main">
+             <div id="nav"></div>
+             <p style="padding-bottom: 3em;">
+               Hello, Everyone, my name is <span style="font-size: xx-large;">The Techno Bug</span>.
+               Welcome to my site! Here is a list of all of my projects:
+             </p>
+             <div class="index-html-links">
+               <h1>Arduino projects</h1>
+               <a href="arduino-project/project0.html">Downloading and Installing the Arduino IDE</a>
+               <a href="arduino-project/project1.html">Arduino project 1: Blinking the Arduino's onboard LED</a>
+               <a href="arduino-project/project2.html">Arduino project 2: Stoplight</a>
+               <a href="arduino-project/project3.html">Arduino project 3: LED control with a button</a>
+               <h1>HTML projects</h1>
+               <a href="html-proects/htmlproject1.html">HTML project 1: Making a blank page</a>
+               <a href="html-proects/htmlproject2.html">HTML project 2: Adding Text, headings, bold and italics</a>
+             </div>
+        </div>
+    </body>
+</html>

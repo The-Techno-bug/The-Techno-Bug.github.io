@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>The Techno Bug</title>
+      <link rel="stylesheet" href="../../CSS/style.css" type="text/css">
+      <link rel="icon" type="image/ico" href="../../images/common/favicon.ico">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">
+      
+   </head>
+   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function openhome(){
+              window.location.replace("../../../mobile");
+          }
+          $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+          $(window).on('load', function(){
+              setTimeout(removeLoader, 1000); 
+              });
+              function removeLoader(){
+                  $( "#loadingDiv" ).fadeOut(500, function() {
+                      $( "#loadingDiv" ).remove(); 
+                      });  
+                }
+        </script>
+    </script>
+      <div id="wrapper" class="main">
+          <header style="text-align: center;">
+            <img src="../../../images/common/logo.png" alt="" class="left" height="171px" width="171px" style="margin: 0 auto; padding: 10px;">
+            <br>
+            <span id="title">
+                The <br> Techno <br> Bug
+            </span>
+         </header>
+         <div id="main">
+            <iframe src="../../navigation/nav.html" frameborder="0" width="100%" height = "500px" style="border-radius: 0cm;"></iframe>
+             <h1 style="padding-bottom: 10px;">HTML project 1</h1>
+             <h2 style="padding-bottom: 30px;">Making a blank website</h2>
+             <div id="video">
+                 <iframe width="100%" height="696" 
+                 src="https://www.youtube.com/embed/6BDxmIBXEPs"
+                 frameborder="0" allow="accelerometer; autoplay; 
+                 encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen></iframe>
+                </div>
+                <div id="Windows">
+                    <table style="width: 80%; align-self: center;" id="table">
+                        <tr>
+                            <td>
+                                <h1>Code</h1>
+                                <p>
+                                    &lt;html>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title> My First Website &lt;/title>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1>I am an h1 heading&lt;/h1>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;I am a short paragraph with &lt;b>bold&lt;/b> and &lt;i>italics&lt;/i>. You use the b and i tags for bold and italics&lt;p>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p>I am a long paragraph with the &lt;strong>strong&lt;/strong> and &lt;em>emphasis ( em )&lt;/em>tags. You can use
+                                        the &lt;strong>strong&lt;/strong> or &lt;em>em&lt;/em> tags for bold and italics as well. The difference between these tags is that the
+                                      strong and em tags are supported on screen readers, where the screen reader says the word strongly(strong tag) 
+                                    or the screen reader says the word with emphasis.&lt;/p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body>
+                                    <br>
+                                    &lt;/html>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../../../images/html/html2code.png" alt="" class="right" height="250px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="funcdef">
+                                    <h1 style="text-align: center;">Tag Definitions</h1>
+                                    <p>
+                                        &lt;!DOCTYPE html>: This is a DTD ( Document type declaration ). It tells the browser that this is an HTML5 document.<br><br>
+                                        &lt;html> and &lt;/html>: These are the opening and closing tags for all html code<br><br>
+                                        &lt;head> and &lt;/head>: These are the opening and closing tags for the head( the tab icon for browsers )<br><br>
+                                        &lt;title> and &lt;/title>: These tags define the title ( what shows in the tab icon )<br><br>
+                                        &lt;body> and &lt;/body>: These are the opening and closing tags for the body ( what shows on the actual website )<br><br>
+                                        &lt;h1>: This is the biggest type of heading. There are more heading tags, which are h2, h3, h4, h5 & h6.<br><br>
+                                        &lt;p>: This tag is short for a paragraph<br><br>
+                                        &lt;b>: This tag makes content inside it bold<br><br>
+                                        &lt;i>: This tag makes content inside it  italic<br><br>
+                                        &lt;strong>: This tag is the same as bold, except the makes screen readers say the content inside it strongly<br><br>
+                                        &lt;em>: This tag is the same as italic, except it makes screen readers say the content inside it with emphasis<br><br>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="Linux">
+                                    <h1 style="vertical-align: middle;">Output</h1>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../../../images/html/htmloutput2.jpg" alt="" class="left OSimg">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            </div>
+       </div>
+   </body>
+</html>
