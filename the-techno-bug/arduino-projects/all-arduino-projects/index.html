@@ -10,20 +10,7 @@
    </head>
    <body style="width: 100%;">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        function openhome(){
-              window.location.replace("../../../the-techno-bug");
-          }
-          $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
-          $(window).on('load', function(){
-              setTimeout(removeLoader, 1000); 
-              });
-              function removeLoader(){
-                  $( "#loadingDiv" ).fadeOut(500, function() {
-                      $( "#loadingDiv" ).remove(); 
-                      });  
-                }
-        </script>
+    <script src=".js/script.js"></script>
       <div id="wrapper" class="main">
         <header style="text-align: center;">
           <img src="../../images/common/logo.png" alt="" class="left" height="226px" width="226px" style="margin: 0 auto; padding: 10px;">
@@ -33,7 +20,7 @@
           </span>
        </header>
        <div id="main">
-        <iframe src="../../navigation/nav.html" frameborder="0" width="100%" height = "300px" style="border-radius: 0cm;"></iframe>
+        <iframe src="../../navigation/nav.html" frameborder="0" width="100%" height = "500px" style="border-radius: 0cm;"></iframe>
           <a href="https://www.youtube.com/channel/UCVSeO49KFWrfR5lFbvKTSpg"><img src="../../images/common/sub.gif" alt="" width="192px" 
               height="108px" style="position: absolute; top: -30px; left: 660px;"></a>
          <div id="main" style="position: absolute; top:80px !important;">
