@@ -9,11 +9,15 @@
     <body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>
-                  if(screen.width < 1000)
-        {
-            window.location.replace("mobile")
-        }
-          </script>
+        function redirectMobileHandler() {
+          const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
+          if(width < 1000) {
+            window.location = "../the-techno-bug/mobile";
+            }
+            }
+            window.onload = redirectMobileHandler();
+            window.onresize = () => redirectMobileHandler();
+     </script>
       </script>
       <script src=".js/script.js"></script>
         <div id="wrapper" class="main">
