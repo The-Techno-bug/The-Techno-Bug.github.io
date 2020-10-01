@@ -297,3 +297,7 @@ a.index-links-mobile{
   color:black;
   display: block;
 }
+
+a.index-links-mobile:hover{
+  background-color: grey;
+}
