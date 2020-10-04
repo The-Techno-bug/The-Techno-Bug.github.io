@@ -2,18 +2,18 @@
 <html lang="en">
    <head>
       <title>The Techno Bug</title>
-      <link rel="stylesheet" href="/the-techno-bug/CSS/style.css" type="text/css">
-      <link rel="icon" type="image/ico" href="/the-techno-bug/images/favicon.ico">
+      <link rel="stylesheet" href="../../CSS/style.css" type="text/css">
+      <link rel="icon" type="image/ico" href="../..//images/common/favicon.ico">
       <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="HandheldFriendly" content="true">      
    </head>
    <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src=".js/script.js"></script>
+    <script src="../../.js/script.js"></script>
       <div id="wrapper" class="main">
           <header style="text-align: center;">
-            <img src="logo.png" alt="" class="left" height="226px" width="226px" style="margin: 0 auto; padding: 10px;">
+            <img src="../../images/common/logo.png" alt="" class="left" height="226px" width="226px" style="margin: 0 auto; padding: 10px;">
             <br>
             <span id="title">
                 The <br> Techno <br> Bug
@@ -39,14 +39,46 @@
                                     <br>
                                     <p>
                                         <span class="teal">
-                                            const int
+                                          const int
                                         </span>
-                                        LED = 9;
-                                        <br>
+                                        red1 = 2;<br>
                                         <span class="teal">
-                                          const int 
+                                          const int
                                         </span>
-                                        button = 10;
+                                        blue1 = 3;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        grn1 = 4;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        ylw1 = 5;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        white1 = 6;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        red2 = 7;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        blue2 = 8;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        grn2 = 9;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        ylw2 = 10;<br>
+                                        <span class="teal">
+                                          const int
+                                        </span>
+                                        white2 = 11;
+                                        
                                         <br><br>
                                         <span class="teal">
                                             void
@@ -66,28 +98,111 @@
                                               pinMode
                                             </span>
                                             (
-                                              LED
+                                              red1
                                             , &nbsp;
                                             <span class="teal">
                                                 OUTPUT
                                             </span>
-                                            );
-                                            <br>
+                                            );<br>
                                             &nbsp;&nbsp;
                                             <span class="org">
                                               pinMode
                                             </span>
                                             (
-                                              button
+                                              blue1
                                             , &nbsp;
                                             <span class="teal">
-                                                INPUT_PULLUP
+                                                OUTPUT
                                             </span>
-                                            );
-                                            <br>
+                                            );<br>
                                             &nbsp;&nbsp;
-                                            );
-                                            <br>
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              grn1
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              ylw1
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              white1
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              red2
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              blue2
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              grn2
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              ylw2
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
+                                            &nbsp;&nbsp;
+                                            <span class="org">
+                                              pinMode
+                                            </span>
+                                            (
+                                              white2
+                                            , &nbsp;
+                                            <span class="teal">
+                                                OUTPUT
+                                            </span>
+                                            );<br>
                                         }
                                     
                                         <br>
@@ -106,50 +221,6 @@
                                             </span>
                                             <br>
                                             &nbsp;&nbsp;
-                                            <span class="org">
-                                              if
-                                            </span>
-                                            (
-                                            <span class="org">
-                                                digitalRead
-                                            </span>
-                                            (button) == 
-                                            </span>
-                                            <span class="teal">
-                                             LOW
-                                            </span>
-                                            )){
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;
-                                            <span class="org">
-                                                digitalWrite
-                                            </span>
-                                            (LED
-                                            </span>
-                                            , &nbsp;
-                                            <span class="teal">
-                                             HIGH
-                                            </span>
-                                            );
-                                            <br>
-                                            &nbsp;&nbsp;
-                                            <span class="org">
-                                                digitalWrite
-                                            </span>
-                                            (LED
-                                            </span>
-                                            , &nbsp;
-                                            <span class="teal">
-                                             LOW
-                                            </span>
-                                            );
-                                            <br>
-                                            &nbsp;&nbsp;
-                                            <span class="org">
-                                                delay
-                                            </span>
-                                            (1);
-                                            <br>
                                         }
                                     </p>
                                 </div> 
