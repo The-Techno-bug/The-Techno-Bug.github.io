@@ -270,10 +270,32 @@
                                         </span>
                                         LedOn(<span class="teal">int</span> ledpin)
                                         {<br>
+                                          &nbsp;&nbsp;<span class="org">digitalWrite</span>(ledpin,
+                                          <span class="teal">HIGH</span>)
+                                          <br>
+                                        } <br><br>
+                                        
+                                        <span class="teal">
+                                          void
+                                        </span>
+                                        LedOff(<span class="teal">int</span> led)
+                                        {<br>
+                                          &nbsp;&nbsp;<span class="org">digitalWrite</span>( pin,
+                                          <span class="teal">LOW</span>)
+                                          <br>
+                                        } <br><br>
+
+                                        <span class="teal">
+                                          void
+                                        </span>
+                                        LedOnAndOff(<span class="teal">int</span> pin, <span class="teal">int</span> delay2)
+                                        {<br>
                                           &nbsp;&nbsp;<span class="org">digitalWrite</span>(pin,
                                           <span class="teal">HIGH</span>)
                                           <br>
-                                        }
+                                        } <br><br>
+                                        
+                                        
                                     </p>
                                 </div> 
                             </td>
