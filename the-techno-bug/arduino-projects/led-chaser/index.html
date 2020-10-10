@@ -271,28 +271,29 @@
                                         LedOn(<span class="teal">int</span> ledpin)
                                         {<br>
                                           &nbsp;&nbsp;<span class="org">digitalWrite</span>(ledpin,
-                                          <span class="teal">HIGH</span>)
+                                          <span class="teal">HIGH</span>);
                                           <br>
                                         } <br><br>
                                         
                                         <span class="teal">
                                           void
                                         </span>
-                                        LedOff(<span class="teal">int</span> led)
+                                        LedOff(<span class="teal">int</span> led);
                                         {<br>
                                           &nbsp;&nbsp;<span class="org">digitalWrite</span>( pin,
-                                          <span class="teal">LOW</span>)
+                                          <span class="teal">LOW</span>);
                                           <br>
                                         } <br><br>
 
                                         <span class="teal">
                                           void
                                         </span>
-                                        LedOnAndOff(<span class="teal">int</span> pin, <span class="teal">int</span> delay2)
+                                        LedOnAndOff(<span class="teal">int</span> pin, <span class="teal">int</span> delay2);
                                         {<br>
-                                          &nbsp;&nbsp;<span class="org">digitalWrite</span>(pin,
-                                          <span class="teal">HIGH</span>)
+                                         &nbsp;&nbsp;LedOn(pin);<br>
+                                          &nbsp;&nbsp;<span class="org">delay</span>(delay2);
                                           <br>
+                                          LedOff(pin);<br>
                                         } <br><br>
                                         
                                         
