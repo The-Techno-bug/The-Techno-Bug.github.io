@@ -10,6 +10,16 @@
    </head>
    <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function redirectMobileHandler() {
+        const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
+        if(width < 1000) {
+          window.location = "../../the-techno-bug/mobile/arduino-projects/stoplight";
+          }
+          }
+          window.onload = redirectMobileHandler();
+          window.onresize = () => redirectMobileHandler();
+   </script>
     <script src=".js/script.js"></script>
       <div id="wrapper" class="main">
           <header style="text-align: center;">
