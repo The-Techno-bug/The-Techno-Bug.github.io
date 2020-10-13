@@ -302,7 +302,3 @@ a.index-links-mobile{
 a.index-links-mobile:hover{
   background-color: grey;
 }
-
-img:hover{
-  scale: 200% 1.1s;
-}
