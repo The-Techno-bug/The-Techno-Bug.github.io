@@ -39,8 +39,7 @@ header{
   font-size: 25px !important;
   border: none;
   height: 50px;
-  width: 210px;
-  border-radius: 10px;
+  width: 25%;
   font-weight: bold;
   font-family: 'Calibri', Verdana, Geneva, sans-serif;
 
@@ -151,8 +150,7 @@ img.OSimg{
   font-size: 25px !important;
   border: none;
   height: 50px;
-  width: 210px;
-  border-radius: 10px;
+  width: 25%;
   font-family: 'Calibri', Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-decoration: none;
