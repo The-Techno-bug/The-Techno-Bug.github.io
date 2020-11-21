@@ -32,54 +32,6 @@ header{
 }
 
 
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 25px !important;
-  border: none;
-  height: 50px;
-  width: 100%;
-  font-weight: bold;
-  font-family: 'Calibri', Verdana, Geneva, sans-serif;
-
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-   cursor: pointer;
-  }
-
-.dropdown:hover .dropdown-content {
-  display: block; 
-  background-color: white;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-  cursor: pointer;
-}
-
 #main{
   position: absolute; 
   top: 300px !important; 
@@ -107,18 +59,6 @@ img.right{
   float: right;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  font-family: 'Calibri', Verdana, Geneva, sans-serif;
-}
-.sidenav a:hover {
-  color: #fff;
-}
-
 .main {
   margin-left: 160px; 
   padding: 0px 10px 0px 0px;
@@ -141,31 +81,12 @@ img.OSimg{
   height: 400px;
 }
 
-.navbutton{
-  background-color: #4CAF50;
-  color: white;
-  position: absolute; 
-  left: 25px;
-  top: 50px;
-  font-size: 25px !important;
-  border: none;
-  height: 50px;
-  width: 100%;
-  font-family: 'Calibri', Verdana, Geneva, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-}
 
 span.middle{
   position: absolute;
   top: 10px;
 }
 
-.navbutton:hover {
-  background-color: #3e8e41;
-  cursor: pointer;
-}
 
 #Linux ol{
   padding-left: 20px;
