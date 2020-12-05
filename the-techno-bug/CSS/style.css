@@ -69,3 +69,8 @@
             background-color: black;
             z-index: 99;
         }
+
+
+.jumbotron{
+    text-align: center;
+}
