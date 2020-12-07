@@ -100,3 +100,8 @@ img{
 #demo ul li{
     background-color: grey  !important;
 }
+
+#video{
+    margin-left: auto;
+    margin-right: auto;
+}
