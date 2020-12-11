@@ -61,7 +61,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         // ...add an html radio button
         answers.push(
           '<label>'
-            + '<button type="nutton" name="question'+i+'" value="'+letter+'">'
+            + '<input type="radio" name="question'+i+'" value="'+letter+'">'
             + letter + ': '
             + questions[i].answers[letter]
           + '</label><br>'
@@ -136,7 +136,6 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 .answers {
     margin-bottom: 20px;
 }
-
 #submit{
   font-family: sans-serif;
   font-size: 20px;
