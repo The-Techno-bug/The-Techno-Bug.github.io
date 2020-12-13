@@ -34,8 +34,8 @@
   },
   {
     question: "Which chracters turn the line after them into a comment?",
-    answer: {
-      a: '"comment/"',
+    answers: {
+      a: 'comment/',
       b: '//',
       c: '/cmt/'
     },
@@ -43,10 +43,10 @@
   },
   {
     question: "Which functions setup and loop the code?",
-    answer: {
-      a: 'void setup(){} and void loop(){}',
-      b: 'arduino.setup(){} and arduino.loop(){}',
-      c: 'setup(){} and void(){}'
+    answers: {
+      a: 'void setup( ){ } and void loop( ){ }',
+      b: 'arduino.setup( ){ } and arduino.loop( ){ }',
+      c: 'setup( ){ } and void( ){ }'
     },
     correctAnswer: 'a'
   }
@@ -117,12 +117,12 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         numCorrect++;
         
         // color the answers green
-        answerContainers[i].style.color = 'green';
+        answerContainers[i].style = 'color:green !important';
       }
       // if answer is wrong or blank
       else{
         // color the answers red
-        answerContainers[i].style.color = 'orangered'
+        answerContainers[i].style = 'color: orangered !important';
       }
     }
 
