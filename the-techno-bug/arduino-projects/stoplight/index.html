@@ -8,12 +8,43 @@
         <!-- Latest bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <!-- Latest Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="../../.js/script.js"></script>
+        <script>
+            
+// SQL keywords
+var keywords = ["SELECT","FROM","WHERE","LIKE","BETWEEN","NOT LIKE","FALSE","NULL","FROM","TRUE","NOT IN"];
+// Keyup event
+$("#editor").on("keyup", function(e){
+  // Space key pressed
+  if (e.keyCode == 32){
+    var newHTML = "";
+    // Loop through words
+    $(this).text().replace(/[\s]+/g, " ").trim().split(" ").forEach(function(val){
+      // If word is statement
+      if (keywords.indexOf(val.trim().toUpperCase()) > -1)
+        newHTML += "<span class='statement'>" + val + "&nbsp;</span>";
+      else
+        newHTML += "<span class='other'>" + val + "&nbsp;</span>"; 
+    });
+    $(this).html(newHTML);
+
+    // Set cursor postion to end of text
+    var child = $(this).children();
+    var range = document.createRange();
+    var sel = window.getSelection();
+    range.setStart(child[child.length-1], 1);
+    range.collapse(true);
+    sel.removeAllRanges();
+    sel.addRange(range);
+    this.focus();
+  }
+});
+</script>
     </head>
     <body>
         <div class="container">
@@ -115,9 +146,7 @@
                         <h2>
                             Code
                         </h2>
-                        <iframe src="https://create.arduino.cc/editor/astronaut_2008/fc4ec887-d8c1-4027-beac-d763ca992a3b/preview?embed"
-                        style="height:510px;width:100%;margin:10px 0" 
-                        frameborder="0"></iframe>
+                        <div id="editor" contenteditable="true">NOT</div>
                     </div>
                 </div>
                 <div class="row">
