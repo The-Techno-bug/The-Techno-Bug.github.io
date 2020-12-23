@@ -109,3 +109,16 @@ img{
 #function-definitions p{
     margin-left: 10px;
 }
+
+#editor {
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    font-size: 14px;
+    font-family: monospace;
+}
+.statement {
+    color: orange;
+}
