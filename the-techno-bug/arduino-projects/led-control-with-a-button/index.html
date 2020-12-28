@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Techno Bug</title>
+        <link href="../../CSS/style.css" rel="stylesheet">
+        <link href="../../images/common/favicon.ico" rel="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="../../.js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="page-top">
+                <div class="jumbotron">
+                    <h1>
+                        The Techno Bug
+                    </h1>
+                </div>
+                <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="../../../the-techno-bug/index.html"><img src="../../images/common/logo.png" alt="The Techno Bug" height="64"></a>
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                      <!-- Dropdown -->
+                      <li class="nav-item dropdown">
+                          <div class="btn-group">
+                                <button type="button" class="btn nav-link">Primary</button>
+                                <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main">
+                <div id="page-header">
+                    <h1>
+                        Arduino project: Controlling an LED with a button
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>
+                            Components used
+                        </h2>
+                        <div id="materials-needed-carousel">
+                            <div id="demo" class="carousel slide" data-ride="carousel">
+                                <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                    <li data-target="#demo" data-slide-to="3"></li>
+                                    <li data-target="#demo" data-slide-to="4"></li>
+                                    <li data-target="#demo" data-slide-to="5"></li>
+                                </ul>
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../images/arduino/materials needed/Arduino_Uno_-_R3.jpg" alt="Arduino Uno" width="1100" >
+                                    <div class="carousel-caption">
+                                        <h3>Arduino Uno</h3>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../images/arduino/materials needed/0887329300.jpg" alt="usb cable" width="1100">
+                                    <div class="carousel-caption">
+                                        <h3>USB to type A cable</h3>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../images/arduino/materials needed/breadboard.jpg" alt="breadboard" width="1100">
+                                    <div class="carousel-caption">
+                                        <h3>Small or Large Breadboard</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../images/arduino/materials needed/all.jpg" alt="leds" width="1100">
+                                    <div class="carousel-caption">
+                                        <h3>Any color LED</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../images/arduino/materials needed/resistor.jpg" alt="resistor" width="1100">
+                                    <div class="carousel-caption">
+                                        <h3>220 &ohm; resistor - Quantity 3</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../images/arduino/materials needed/wire.jpg" alt="wires" width="1100">
+                                    <div class="carousel-caption">
+                                        <h3>7 Male to Male wires</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="code">
+                        <h2>
+                            Code
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="connections">
+                            <h2>
+                                Connections
+                            </h2>
+                            <img src="../../images/arduino/connections/connections2.jpg" alt="connections" width="400">
+                            <ol>
+                                <li>
+                                    Connect the LEDs to the breaboard and the resistors to the long legs of the LEDs
+                                </li>
+                                <li>
+                                    Connect short legs of LEDs to the Negative Rail
+                                </li>
+                                <li>
+                                    Connect Negative rail to GND on Ardunino
+                                </li>
+                                <li>
+                                    Connect Green LED resistor to arduino pin 11
+                                </li>
+                                <li>
+                                    Connect Yellow LED resistor to arduino pin 10
+                                </li>
+                                <li>
+                                    Connect Red LED resistor to arduino pin 9
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="function-definitions">
+                            <h2>
+                                Function Definitions
+                            </h2>
+                            <p>
+                                <span class="grn">//Blink Sketch - Blink Arduino's onboard LED</span>: The // indicates that the line is a comment, something for the programmer to read instead of the computer<br><br>
+                                <span class="grn">void setup() {}</span>: void setup() is a way of telling the arduino that this is what I want you  to run once ( Kind of like setting up your computer - you only have to do it once! ) The curly brackets indicate what is inside void setup() and what is not.<br><br>
+                                <span class="grn">pinMode(pin, mode)</span>: The pinMode function tells the arduino to set up the pin to mode.<br><br>
+                                <span class="grn">LED_BUILTIN</span>:  This is the pin that represents the onboard LED.<br><br>
+                                <span class="grn">OUTPUT</span>: One of the modes from pinMode.<br><br>
+                                <span class="grn">void loop() {}</span>: void loop() is a way of telling the arduino that this is what I want you to run until someone resets or turns off the arduino ( like booting your computer: It keeps running until you shut it down! ) The curly brackets indicate what is inside void setup() and what is not.<br><br>
+                                <span class="grn">digitalWrite(pin, status)</span>: The digitalWrite function turns the pin to positive or negative, depending on the status.<br><br>
+                                <span class="grn">HIGH</span>: This represents positive energy in the digitalWrite function.<br><br>
+                                <span class="grn">LOW</span>: This represents negative energy in the digitalWrite function.<br><br>
+                                <span class="grn">delay(milliseconds)</span>: The delay function pauses the arduino for the number of milliseconds.<br><br>
+                                Last but not least, don't forget the semicolon at the end of each line! The semicolon tells the arduino that one instruction is over.<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="output">
+                            <video controls width="400">
+                                <source src="../../images/arduino/output/output.mp4" type="video/mp4">
+                                <source src="../../images/arduino/output/output.mov" type="video/mov">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>
+                            Quiz
+                        </h2>
+                        <div id="quiz">
+                            <iframe src="quiz/quiz.html" frameborder="0" width="350px" height="870px"></iframe>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="video">
+                                    <iframe src="https://www.youtube.com/embed/hJqDt7UaZpw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                                </div> 
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
