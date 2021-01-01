@@ -12,8 +12,9 @@
         <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <!-- Latest Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="../../.js/script.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+            $("#nav").load("../../nav/nav.html")
+        </script>
     </head>
     <body>
         <div class="container">
@@ -23,24 +24,7 @@
                         The Techno Bug
                     </h1>
                 </div>
-                <div class="navbar navbar-expand-sm bg-dark navbar-dark">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="../../../the-techno-bug/index.html"><img src="../../images/common/logo.png" alt="The Techno Bug" height="64"></a>
-                    <!-- Links -->
-                    <ul class="navbar-nav">
-                      <!-- Dropdown -->
-                      <li class="nav-item dropdown">
-                          <div class="btn-group">
-                                <button type="button" class="btn nav-link">Primary</button>
-                                <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Link 1</a>
-                                    <a class="dropdown-item" href="#">Link 2</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <div id="nav"></div>
             </div>
             <div id="main">
                 <div id="page-header">
