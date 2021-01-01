@@ -122,3 +122,8 @@ img{
 .statement {
     color: orange;
 }
+
+.carousel-item img{
+    float: middle;
+    
+}
