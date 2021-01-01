@@ -4,22 +4,22 @@
         <button id="submit">Submit Quiz</button>
         <div id="results"></div>
         <script>
-            var myQuestions = [
+var myQuestions = [
   {
     question: "What does 'INPUT_PULLUP' value on the pinMode function do?",
     answers: {
-      a: 'void setup',
-      b: 'pinMode',
+      a: 'Sends LOW all the time',
+      b: 'Does not send anything',
       c: 'digitalWrite'
     },
-    correctAnswer: 'b'
+    correctAnswer: 'a'
   },
   {
-    question: "Which pin represents the built-in LED?",
+    question: "What does const do to int?",
     answers: {
-      a: 'BUILTIN_LED',
-      b: 'LEDPin',
-      c: 'LED_BUILTIN'
+      a: 'Makes the int constant(Not changeable)',
+      b: 'Constantly checks the int for a value',
+      c: 'Constantly creates a new variable with the same name and same value'
     },
     correctAnswer: 'c'
   },
@@ -35,9 +35,9 @@
   {
     question: "What 2 values can the digitalRead function return?",
     answers: {
-      a: 'comment/',
-      b: '//',
-      c: '/cmt/'
+      a: 'TRUE, FALSE',
+      b: 'HIGH, LOW',
+      c: '1, 0'
     },
     correctAnswer: 'b'
   },
