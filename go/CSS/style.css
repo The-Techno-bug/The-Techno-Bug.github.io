@@ -59,3 +59,19 @@ img{
     background-color: #343A40 !important;
     color: white;
 }
+
+
+.indexbox{
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.indeximg{
+    position: relative;
+    top: 5px;
+}
